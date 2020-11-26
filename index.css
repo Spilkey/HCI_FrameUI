@@ -1,0 +1,67 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+    margin: unset;
+    overflow: hidden
+}
+
+.main {
+    width: auto;
+    height: 100vh;
+    background-color: black;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.main img {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    object-fit: scale-down;
+    margin: 0px auto;
+}
+
+.main .center-image {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main.slide {
+    transform: translateX(-100vw);
+    transition: transform 1000ms;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Fade in keyframe animation */
+
+.fade-in {
+    animation: fadeIn ease 1000ms;
+    -webkit-animation: fadeIn ease 1000ms;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
